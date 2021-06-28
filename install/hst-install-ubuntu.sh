@@ -374,9 +374,9 @@ fi
 if [ -z "$withdebs" ] || [ ! -d "$withdebs" ]; then
     release_branch_ver=$(curl -s https://raw.githubusercontent.com/hestiacp/hestiacp/release/src/deb/hestia/control |grep "Version:" |awk '{print $2}')
     if [ "$HESTIA_INSTALL_VER" != "$release_branch_ver" ]; then
-        echo
-        echo -e "\e[91mInstallation aborted\e[0m"
-        echo "===================================================================="
+#        echo
+#        echo -e "\e[91mInstallation aborted\e[0m"
+#        echo "===================================================================="
         echo -e "\e[33mERROR: Install script version does not match package version!\e[0m"
         echo -e "\e[33mPlease download the installer from the release branch in order to continue:\e[0m"
         echo ""
